@@ -14,8 +14,10 @@ public class ObjectivePointer : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (player == null || objective == null)
-            return;
+        GameObject objectiveGO = GameObject.FindWithTag("Objective");
+
+
+        objective = objectiveGO.transform;
 
         Vector2 directionToObjective = (objective.position - player.position).normalized;
 
@@ -24,7 +26,6 @@ public class ObjectivePointer : MonoBehaviour
         transform.position = trianglePosition;
 
         float angleToTriangle = Mathf.Atan2(directionToObjective.y, directionToObjective.x) * Mathf.Rad2Deg;
-
 
         float rotationAngle = angleToTriangle + 90f + 180f;
 
