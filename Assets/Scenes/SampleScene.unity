@@ -318,10 +318,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1045442434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1022.65125, y: -457.4}
-  m_SizeDelta: {x: 256.4974, y: 50}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -2186.1226, y: -459}
+  m_SizeDelta: {x: 278.25244, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390791083
 MonoBehaviour:
@@ -675,7 +675,8 @@ MonoBehaviour:
   player: {fileID: 216566790}
   objective: {fileID: 0}
   distanceText: {fileID: 390791083}
-  verticalOffset: 175
+  verticalOffset: 150
+  horizontalOffset: 20
 --- !u!4 &882462475
 Transform:
   m_ObjectHideFlags: 0

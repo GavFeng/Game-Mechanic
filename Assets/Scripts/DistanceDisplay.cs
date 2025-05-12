@@ -7,7 +7,8 @@ public class DistanceDisplay : MonoBehaviour
     public Transform player;          
     public Transform objective;       
     public TextMeshProUGUI distanceText; 
-    public float verticalOffset = 50f; 
+    public float verticalOffset = 150f;
+    public float horizontalOffset = 20f;
     private Camera mainCamera;        
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,7 +31,7 @@ public class DistanceDisplay : MonoBehaviour
 
         Vector3 playerScreenPos = mainCamera.WorldToScreenPoint(player.position);
 
-        Vector3 textScreenPos = new Vector3(playerScreenPos.x, playerScreenPos.y + verticalOffset, playerScreenPos.z);
+        Vector3 textScreenPos = new Vector3(playerScreenPos.x + horizontalOffset, playerScreenPos.y + verticalOffset, playerScreenPos.z);
 
         distanceText.rectTransform.position = textScreenPos;
     }
